@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+}
+
+.onboarding {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #121212;
+    z-index: 1;
+    transition: transform 1s ease-in-out, font-size 1s ease-in-out;
+}
+
+.main-title {
+    font-size: 5rem;
+    opacity: 0.8;
+    transition: font-size 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.info-top-left,
+.info-top-right,
+.info-bottom-left,
+.info-bottom-right {
+    position: absolute;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.info-top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.info-top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.info-bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.info-bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.gallery-image {
+    max-width: 30%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.center {
+    align-self: center;
+}
+
+.right {
+    align-self: flex-end;
+}
